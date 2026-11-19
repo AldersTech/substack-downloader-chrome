@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Substack Video Downloader Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="options">
+  <h1>Substack Video Downloader</h1>
+
+  <section>
+    <h2>Closed captions</h2>
+    <label class="row">
+      <input type="checkbox" id="captions" />
+      <span>Download closed captions with the video</span>
+    </label>
+    <label class="row indent">
+      <span>Format</span>
+      <select id="captionFormat">
+        <option value="srt">SRT (.srt), works in most players</option>
+        <option value="vtt">WebVTT (.vtt)</option>
+      </select>
+    </label>
+    <p class="hint">Captions are saved as a separate file next to the video, with the same name.
+      Players such as VLC and IINA load them automatically.</p>
+  </section>
+
+  <section>
+    <h2>File name</h2>
+    <label class="field">
+      <span>Prefix</span>
+      <input type="text" id="prefix" placeholder="e.g. substack_" />
+    </label>
+    <p class="hint">Example: <code id="example"></code></p>
+  </section>
+
+  <section>
+    <h2>Download location</h2>
+    <label class="field">
+      <span>Folder inside Downloads</span>
+      <input type="text" id="folder" placeholder="Leave blank to use Downloads" />
+    </label>
+    <p class="hint">Saves to <code id="folderPreview"></code>. Chrome only lets extensions save inside
+      your Downloads folder. To pick any folder, turn on the option below.</p>
+    <label class="row">
+      <input type="checkbox" id="askWhereToSave" />
+      <span>Ask where to save each file</span>
+    </label>
+  </section>
+
+  <div class="actions">
+    <button id="reset">Reset to defaults</button>
+    <span id="saved" class="muted"></span>
+  </div>
+
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
