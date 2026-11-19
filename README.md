@@ -28,8 +28,6 @@ Click ⚙ in the popup or open the extension's **Options** page.
 - **Download location**: a folder inside `Downloads` (blank = `Downloads`). Chrome doesn't let
   extensions write outside `Downloads`. Turn on **Ask where to save each file** to choose any folder.
 
-![mymc running on macOS](screens/settings.png)
-
 ## How it works
 
 Substack note videos are hosted on a remote server and uses api requests to embed the post.
