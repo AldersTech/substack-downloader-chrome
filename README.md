@@ -13,8 +13,6 @@ Downloads the video on the Substack note or post you're viewing, with an optiona
 3. Click **Load unpacked** and select this folder.
 4. Pin the extension from the puzzle-piece menu.
 
-![mymc running on macOS](screens/screenshot.png)
-
 ## Use
 
 Open a note or page with videos embeded in them, then click the extension icon and **Download**.
